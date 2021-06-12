@@ -6,8 +6,11 @@ for (var i = 1; i < d+1; i++) {
 return arr;
 }
 
-arr=[1,2,3,4,5]
-var d=2
-var n=5
+d=prompt("enter array length:");
+n=prompt("enter how many times rotate:");
+arr=[]
+for(var i=0; i<d; i++) {
+	arr[i] = prompt('Enter Element ' + (i+1));
+}
 
 console.log(leftRotate(arr,d,n));
